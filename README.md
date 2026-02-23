@@ -17,7 +17,11 @@ I am a Junior QA Tester with a strong foundation in IT support and a focus on de
 
 ## 📁 Practical Projects
 
-*Projects are currently being documented and uploaded.*
+### 1. Recruitment Portal Audit - Form Validation & Localization
+**Objective:** End-to-end testing of a candidate application flow to identify functional and UX defects.
+* **Status:** Completed
+* **Key Findings:** Unhandled system exceptions, missing input validation (email/phone), and localization inconsistencies (Romanian/Polish mix).
+* **[View Full Audit Report & Screenshots](./Recruitment-Portal-Audit/Audit-Report.md)**
 
 ---
 
