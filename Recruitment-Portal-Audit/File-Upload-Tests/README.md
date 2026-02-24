@@ -25,5 +25,8 @@
 * **Expected Result:** System should block the upload and show an error.
 
 **Visual Proof:**
-![Success Upload](link-poza-1)
-![Success Submission](link-poza-2)
+<img width="1197" height="623" alt="Screenshot 2026-02-24 at 17-24-46 Lucrător depozit – lucrător de completare comenzi - Work Force RO" src="https://github.com/user-attachments/assets/16a6027c-36f9-4b8c-98f0-c04a086dd0cf" />
+<img width="1703" height="273" alt="Screenshot 2026-02-24 at 17-27-01 Lucrător depozit – lucrător de completare comenzi - Work Force RO" src="https://github.com/user-attachments/assets/a0c00e09-d175-403a-9bb5-cfae70a1b9a2" />
+
+
+
