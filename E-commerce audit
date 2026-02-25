@@ -1,0 +1,70 @@
+# Project: E-commerce Functionality Audit - Shopping Cart
+
+## 1. Project Overview
+This project consists of a professional **Manual Testing Audit** performed on a live E-commerce platform. The focus was to evaluate the **Shopping Cart** flow, ensuring that business rules are enforced and that the system handles invalid data gracefully.
+
+* **Target Application:** [Numele Site-ului, ex: Pandora / Elefant.ro]
+* **Module Tested:** Shopping Cart & Quantity Management.
+* **Testing Types:** Negative Testing, Boundary Value Analysis (BVA), Functional Testing, and UX Audit.
+* **Objective:** To identify critical logic flaws that could lead to data corruption or a broken user experience during the checkout process.
+
+---
+
+## 2. Test Scenarios & Methodology
+
+To evaluate the robustness of the Shopping Cart, I applied **Black Box Testing** techniques, specifically focusing on how the system handles unconventional user inputs.
+
+### Scenario 1: Negative Quantity Validation
+* **Test Type:** Negative Testing / Data Integrity
+* **Objective:** To verify if the application prevents the entry of negative values (e.g., `-1`) in the quantity field.
+* **Expected Result:** The system should trigger a **Validation Error** and prevent any updates to the total price or stock until a valid positive integer is provided.
+
+### Scenario 2: Upper Boundary Value Analysis (BVA)
+* **Test Type:** Boundary Value Analysis
+* **Objective:** To test the system's behavior when the requested quantity exceeds the current stock or a predefined business limit (e.g., 100 units).
+* **Expected Result:** The system should provide a clear, user-friendly **Error Message** (e.g., "Insufficient stock") instead of generic system failures.
+
+### Scenario 3: UI/UX Constraints Audit
+* **Test Type:** Functional Testing / UX Audit
+* **Objective:** To analyze the consistency of input methods (Input Fields vs. Dropdowns) across different pages (Product Page vs. Cart Page).
+* **Expected Result:** The system should enforce consistent **Input Constraints** to prevent the user from reaching an error state.
+
+---
+
+## 3. Test Execution & Actual Results
+
+This section documents the actual behavior of the system during testing compared to the expected outcomes.
+
+### Scenario 1: Negative Quantity Input (-1)
+**Status:** ❌ **FAILED (Critical)**
+
+* **Actual Behavior:** Upon entering `-1`, the system incorrectly sanitized the input, converting it to a quantity of `2` and updating the price accordingly. Subsequent attempts to modify the value to `-1` triggered an **Infinite Loading State** (Application Freeze).
+* **Defect Type:** Logic Error / Improper Exception Handling.
+* **Impact:** High. It leads to **Data Corruption** in the cart and a complete loss of functionality (UX Block).
+* **Evidence:** [Refer to Screenshot: Loading_Infinite.png]
+
+### Scenario 2: Upper Boundary Testing (100 units)
+**Status:** ⚠️ **PARTIAL PASS (UX Issue)**
+
+* **Actual Behavior:** The system correctly blocked the addition of 100 units due to stock limits. However, it displayed a **Misleading Error Message**: *"Varianta selectata nu este disponibila"*.
+* **Defect Type:** Poor **Error Messaging** / User Experience.
+* **Observation:** The message implies the product is deleted or unavailable, rather than notifying the user about **Insufficient Stock**.
+* **Evidence:** [Refer to Screenshot: Stock_Error_100.png]
+
+### Scenario 3: UI/UX Constraints (Dropdown Menu)
+**Status:** ✅ **PASS**
+
+* **Actual Behavior:** Once the product is in the cart, the quantity can only be modified via a **Hardcoded Dropdown Menu** limited to 11 units.
+* **Observation:** This is a solid **Frontend Constraint** that prevents users from entering invalid data (like negative numbers) directly in the cart view.
+* **Evidence:** [Refer to Screenshot: Dropdown_Limit.png]
+
+---
+
+## 4. Final Summary & Bug Inventory
+
+| Bug ID | Severity | Description | Status |
+| :--- | :--- | :--- | :--- |
+| **BUG-EC-001** | **Critical** | Infinite loading loop when repeatedly entering negative values. | **Open** |
+| **BUG-EC-002** | **Major** | Input sanitization failure: -1 is converted to 2 instead of being rejected. | **Open** |
+| **BUG-EC-003** | **Minor** | Generic/Misleading error message for stock limits (UX Issue). | **Open** |
+
