@@ -41,7 +41,10 @@ This section documents the actual behavior of the system during testing compared
 * **Actual Behavior:** Upon entering `-1`, the system incorrectly sanitized the input, converting it to a quantity of `2` and updating the price accordingly. Subsequent attempts to modify the value to `-1` triggered an **Infinite Loading State** (Application Freeze).
 * **Defect Type:** Logic Error / Improper Exception Handling.
 * **Impact:** High. It leads to **Data Corruption** in the cart and a complete loss of functionality (UX Block).
-* **Evidence:** [Refer to Screenshot: Loading_Infinite.png]
+* **Evidence:** 
+<img width="1188" height="653" alt="Image" src="https://github.com/user-attachments/assets/f25eb5dc-37b4-4630-9c2c-a7976aa2ac45" />
+<img width="1538" height="523" alt="Image" src="https://github.com/user-attachments/assets/2c73677c-cac6-47fa-b2bc-6d17000f8997" />
+![Image](https://github.com/user-attachments/assets/9be43c1c-dafe-410c-8b2c-a2f6fafcc767)
 
 ### Scenario 2: Upper Boundary Testing (100 units)
 **Status:** ⚠️ **PARTIAL PASS (UX Issue)**
@@ -49,14 +52,16 @@ This section documents the actual behavior of the system during testing compared
 * **Actual Behavior:** The system correctly blocked the addition of 100 units due to stock limits. However, it displayed a **Misleading Error Message**: *"Varianta selectata nu este disponibila"*.
 * **Defect Type:** Poor **Error Messaging** / User Experience.
 * **Observation:** The message implies the product is deleted or unavailable, rather than notifying the user about **Insufficient Stock**.
-* **Evidence:** [Refer to Screenshot: Stock_Error_100.png]
+* **Evidence:** 
+<img width="1533" height="472" alt="Image" src="https://github.com/user-attachments/assets/5dbe237f-23cb-49f3-802e-b08831d5ca17" />
 
 ### Scenario 3: UI/UX Constraints (Dropdown Menu)
 **Status:** ✅ **PASS**
 
 * **Actual Behavior:** Once the product is in the cart, the quantity can only be modified via a **Hardcoded Dropdown Menu** limited to 11 units.
 * **Observation:** This is a solid **Frontend Constraint** that prevents users from entering invalid data (like negative numbers) directly in the cart view.
-* **Evidence:** [Refer to Screenshot: Dropdown_Limit.png]
+* **Evidence:**
+![Image](https://github.com/user-attachments/assets/f86d8372-aa2b-4b8e-a8a8-969b31b5b7cb)
 
 ---
 
