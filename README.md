@@ -22,7 +22,12 @@ I am a Junior QA Tester with a strong foundation in IT support and a focus on de
 * **Status:** Completed
 * **Key Findings:** Unhandled system exceptions, missing input validation (email/phone), and localization inconsistencies (Romanian/Polish mix).
 * **[View Full Audit Report & Screenshots](./Recruitment-Portal-Audit/Audit-Report.md)**
-
+---
+### 2. [Manual Testing] Recruitment Portal - File Upload Audit
+* **Description:** Comprehensive audit of a job application form, focusing on file upload security and validation logic.
+* **Key Issues Found:** Critical bypass of file size/format restrictions and misleading error messages.
+* **View Full Report:** [Click here to see the detailed Bug Report and Evidence]((https://github.com/AndreeaGrg-SoftwareTesting/SoftwareTesting-Portofolio/blob/main/Recruitment-Portal-Audit/File-Upload-Tests/README.md))
+  
 ---
 
 ## 📈 Education & Certifications
