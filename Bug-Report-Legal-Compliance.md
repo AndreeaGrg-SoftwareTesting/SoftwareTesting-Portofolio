@@ -30,11 +30,11 @@ The user is redirected to a blank page with the message: "508 Resource Limit Is 
 
 ## 5. Environment
 
-    URL: aptjob.ro (conform capturii de ecran)
+   - URL: aptjob.ro (conform capturii de ecran)
 
-    Browser: Chrome / Any
+   - Browser: Chrome / Any
 
-    Date: February 26, 2026
+   - Date: February 26, 2026
 
 ## 6. Attachments
 
