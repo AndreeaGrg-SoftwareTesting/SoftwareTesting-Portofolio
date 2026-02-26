@@ -12,13 +12,13 @@ When attempting to access the "Termenii si conditiile site-ului" link from the r
 
 ## 2. Steps to Reproduce
 
-    1. Navigate to the login/registration page of the application.
+    1.Navigate to the login/registration page of the application.
 
-    2. Locate the "Termeni Si Conditii" section.
+    2.Locate the "Termeni Si Conditii" section.
 
-    3. Click on the hyperlinked text: "termenii si conditiile site-ului *".
+    3.Click on the hyperlinked text: "termenii si conditiile site-ului *".
 
-    4. Observe the page redirection.
+    4.Observe the page redirection.
 
 ## 3. Expected Result
 
@@ -30,7 +30,7 @@ The user is redirected to a blank page with the message: "508 Resource Limit Is 
 
 ## 5. Environment
 
-   - URL: aptjob.ro (conform capturii de ecran)
+   - URL: aptjob.ro (according to screenshot)
 
    - Browser: Chrome / Any
 
