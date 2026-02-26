@@ -12,10 +12,13 @@ When attempting to access the "Termenii si conditiile site-ului" link from the r
 
 ## 2. Steps to Reproduce
 
-    1.Navigate to the login/registration page of the application.
-    2.Locate the "Termeni Si Conditii" section.
-    3.Click on the hyperlinked text: "termenii si conditiile site-ului *".
-    4.Observe the page redirection.
+1.Navigate to the login/registration page of the application.
+
+2.Locate the "Termeni Si Conditii" section.
+
+3.Click on the hyperlinked text: "termenii si conditiile site-ului *".
+
+4.Observe the page redirection.
 
 ## 3. Expected Result
 
