@@ -20,6 +20,18 @@ Verify that the search engine correctly filters job listings and provides approp
 
 ---
 
+### 3. Test Steps & Data
+
+| Step | Action | Test Data| 
+| :--- | :--- | :--- | 
+| 1 | Locate the search input field | -| 
+| 2 | Enter a keyword with high vacancy volume | `warehouse` |
+| 3 | Click the "Search" button | - |
+| 4 | Clear the search and enter a non-existent category | `doctor` |
+| 5 | Click the "Search" button | - |
+
+---
+
 
 
 
