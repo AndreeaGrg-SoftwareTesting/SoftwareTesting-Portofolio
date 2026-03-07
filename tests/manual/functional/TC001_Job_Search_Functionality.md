@@ -50,11 +50,10 @@ Verify that the search engine correctly filters job listings and provides approp
 
 ### 6. Test Evidence
 * **Scenario: High volume results ("warehouse")**
-  ![Warehouse Results]<img width="1787" height="663" alt="Screenshot 2026-03-07 at 12-07-11 Jobs Tempo-Team" src="https://github.com/user-attachments/assets/a1debe59-87b9-4183-ac50-19f86b9329c4" />
+  <img width="1787" height="663" alt="Screenshot 2026-03-07 at 12-07-11 Jobs Tempo-Team" src="https://github.com/user-attachments/assets/a1debe59-87b9-4183-ac50-19f86b9329c4" />
 
 
 * **Scenario: No results found ("doctor")**
-  ![No Results](path/to/your/image_doctor.png)
 <img width="1477" height="795" alt="Screenshot 2026-03-07 at 12-08-00 Jobs Tempo-Team" src="https://github.com/user-attachments/assets/ed24950a-2945-4342-835b-6e8e000289a1" />
 
 
