@@ -1,5 +1,6 @@
-**TC 001: Job Search Functionality (Keyword-based)**
+**TC 001: Job Search Functionality (Keyword-based)**  
 
-***Test Suite:*** Manual / Functional
-***Priority:*** High
-***Status:*** Completed
+-***Test Suite:*** Manual / Functional  
+-***Priority:*** High  
+-***Status:*** Completed  
+
