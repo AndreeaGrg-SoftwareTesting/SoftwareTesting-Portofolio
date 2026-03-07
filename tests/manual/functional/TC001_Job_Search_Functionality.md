@@ -32,6 +32,31 @@ Verify that the search engine correctly filters job listings and provides approp
 
 ---
 
+### 4. Expected Results
+
+* **For "warehouse":** The system should display a list of vacancies (e.g., 160 found) containing the keyword.
+*	**For "doctor":** The system should display a "No results found" message (e.g., "Oops, we have not found any vacancies") and provide tips for better searching.
+
+---
+
+### 5. Actual Results (Findings)
+
+* **Positive Scenario:** System returned 160 vacancies for "warehouse". Relevant job cards (Wasco, Tempo-Team) were displayed correctly.
+* **Negative Scenario:** System correctly identified no matches for "doctor". Displayed a user-friendly error message with suggestions to refine the search.
+
+### Final Status: PASS
+
+---
+
+### 6. Test Evidence
+* **Scenario: High volume results ("warehouse")**
+  ![Warehouse Results]<img width="1787" height="663" alt="Screenshot 2026-03-07 at 12-07-11 Jobs Tempo-Team" src="https://github.com/user-attachments/assets/a1debe59-87b9-4183-ac50-19f86b9329c4" />
+
+
+* **Scenario: No results found ("doctor")**
+  ![No Results](path/to/your/image_doctor.png)
+<img width="1477" height="795" alt="Screenshot 2026-03-07 at 12-08-00 Jobs Tempo-Team" src="https://github.com/user-attachments/assets/ed24950a-2945-4342-835b-6e8e000289a1" />
+
 
 
 
